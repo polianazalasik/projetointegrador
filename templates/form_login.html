@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="/static/login.css">
+</head>
+<body>
+	<div id="menuu">
+    	<ul>
+    	<div class="a">
+        	<li><a href = "/comprar">Comprar</a></li>
+        	<li><a href = "/contato">Contato</a></li>
+        	<li><a href = "/form_login">Login</a></li>
+    	</div>
+	</div>
+	<br>
+	<br>
+	<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="/login"> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
+          </p>
+          
+          <p> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+          </p>
+          
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Logar" />
+          </p>
+          
+          <p class="link">
+            Ainda não tem conta?
+            <a href="/form_inserir_pessoas">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>

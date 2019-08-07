@@ -1,0 +1,171 @@
+/* CSS reset */
+*, *:before, *:after { 
+  margin:0;
+  padding:0;
+  font-family: Arial;
+}
+
+body{
+  margin:10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links{
+  display: none;
+}
+
+/* content que contem os formulários */
+.content{
+  width: 500px;
+  margin: 0px auto;
+  position: relative;   
+}
+
+/* formatando o cabeçalho dos formulários */
+h1{
+  font-size: 48px;
+  color: black;
+  padding: 10px 0;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+}
+  
+
+p{
+  margin-bottom:15px;
+}
+p:first-child{
+  margin: 0px;
+}
+label{
+  color: grey;
+  position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  {
+  color: grey; 
+  font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: grey;
+  font-style: italic;
+} 
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;    
+  border: 1px solid grey;
+  
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: black;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid black;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: black;
+}
+
+/* estilos para para ambos os formulários */
+#cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  border: 1px solid black;
+  background: white;
+  
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+#menuu {
+    height: 60px;
+    background-color: black;
+    color: white;
+} 
+  
+#menuu ul {
+    padding:25px;
+    margin:20px;
+    list-style:none;
+    font-size: 20px;
+    color: white;
+    word-spacing: 35px;
+    font-family:"Yu Gothic Light";
+    float: right;
+    text-decoration: none;
+    position: relative;
+    top: -30px;
+}
+  
+#menuu ul li {
+    display: inline;
+}
+
+.a a {
+    text-decoration: none;
+    color: white;
+}
