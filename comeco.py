@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicio():
-    return render_template("inicio.html")
+    return render_template("Index.html")
 
 @app.route("/listar_pessoas")
 def listar_pessoas():
@@ -77,6 +77,10 @@ def logout():
 @app.route("/contato")
 def contato():
     return render_template("contato.html")
+
+@app.route("/album")
+def album():
+    return render_template("album.html")
 
 app.config['SECRET_KEY'] = 'RYDYDYT'
 app.run(host="0.0.0.0", debug=True)

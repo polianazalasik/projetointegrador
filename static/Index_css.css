@@ -1,0 +1,44 @@
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	font-family: "NSimSun";
+
+}
+
+#menu ul li { display: inline; }
+
+#menu {
+	background-color: black;
+	font-size: 15px;
+	height: 50px;
+}
+
+#menu a{
+	color: #FFFFFF;
+	font-size: 19px;
+
+}
+
+img{
+	height: 450px;
+	width: 1332px;
+	position: center;
+}
+
+h2{
+	font-size: 30px;
+	padding: 10px;
+}
+
+p{
+	font-size: 15px;
+	margin: 20px;
+}
+
+h4{
+	font-size: 30px;
+	text-align: center;
+}
+
