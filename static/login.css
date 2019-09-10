@@ -169,3 +169,13 @@ input[type="submit"]:hover{
     text-decoration: none;
     color: white;
 }
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	font-family: "NSimSun";
+
+}
+

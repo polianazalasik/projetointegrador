@@ -9,8 +9,8 @@ h5 {
     color: black;
 }
 img {
-    width: 30px;
-    height: 30px;
+    width: 269px;
+    height: 249px;
 }
 fieldset {
     border:2px solid gray;
@@ -54,4 +54,13 @@ label {
 
 .formulario {
     position: absolute;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	font-family: "NSimSun";
+
 }

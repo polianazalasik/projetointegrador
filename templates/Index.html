@@ -3,25 +3,31 @@
 <head>
 	<title>Universo MPB</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/static/Index_css.css">
+	<link rel="stylesheet" type="text/css" href="/static/inicio.css">
 	
 </head>
 <body>
-	<nav id="menu">
+	<nav id="menuu">
 	    <ul>
-	        <li><a href = "/comprar">Comprar</a></li>
-        	<li><a href = "/contato">Contato</a></li>
-        	<li><a href = "/form_login">Login</a></li>
+        <div class="a">
+	        <li><a href = "/contato">Contato</a></li>
+        	<li><a href = "/form_inserir_pessoas">Cadastro</a></li>
+            <li><a href = "/form_login">Login</a></li>
+        </div>
 	    </ul>
 	</nav>
-
-
 <br>
-
-<img src="/static/in.png">
+<h4>Artistas em destaque</h4>
+<nav id="menu">
+    <ul>
+        <li><a href="/album">Anavitória</a></li>
+        <li><a href="/alumbum1">Melim</a></li>
+        <li><a href="#">nada</a></li>
+        <li><a href="#">nada</a></li>
+        <li><a href="#">nada</a></li>
+    </ul>
+</nav>
 <br>
-<br>
-<hr>
 <br>
 <h2>MPB</h2>
 <p>A década de 60 é considerada um período de ebulição na música brasileira. É quando passam a coexistir o samba, o jazz, a Bossa Nova, o sertanejo de raiz, a moda de viola, o baião nordestino, o rock e outros.
@@ -40,30 +46,23 @@ Esse período é considerado um marco para a indústria da música nacional. Com
 A partir dessa fase é popularizada a sigla MPB como marca de um movimento próprio de contestação social e política.</p>
 <br>
 <hr>
-<h4>Artistas em destaque</h4>
-		{%if session['usuario']:%}
-            <form action = "/listar_pessoas">
-                <button>Listar</button>
-            </form>
-            <form action = "/logout">
-                <button>Logout</button>
-            </form>
-        {%else:%}
-            <form action = "/listar_pessoas">
-                <button>Listar</button>
-            </form>
-            <form action = "/form_login">
-                <button>Login</button>
-            </form>
-        {%endif%}
 <footer>
 <br>
 
 <div class="italico">	
 	<h3>© 2019 Copyright: Todos os direitos reservados</h3>
 </div>
-<br>
 </footer>
 
 </body>
 </html>
+
+<!--{%if session['usuario']:%}
+<form action = "/logout">
+    <a href = "/logout">Logout</a>
+</form>
+{%else:%}
+<form action = "/form_login">
+    <a href = "/form_login">Login</a>
+</form>
+{%endif%}-->

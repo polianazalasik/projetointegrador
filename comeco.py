@@ -82,6 +82,9 @@ def contato():
 def album():
     return render_template("album.html")
 
+@app.route("/alumbum1")
+def alumbum():
+    return render_template("alumbum1.html")
+
 app.config['SECRET_KEY'] = 'RYDYDYT'
 app.run(host="0.0.0.0", debug=True)
-
