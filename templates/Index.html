@@ -3,7 +3,52 @@
 <head>
 	<title>Universo MPB</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/static/inicio.css">
+    <link rel="stylesheet" type="text/css" href="/static/inicio.css">
+    <style>
+		
+
+		.galeria{
+			
+			width: 1480px;
+			height: 470px;
+			position: relative;
+			overflow: hidden;
+		}
+
+
+		.foto{
+			position: absolute;
+			opacity: 0;
+			animation-name: animacao;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes animacao{
+			25%{
+				opacity: 1;
+				transform: scale(1.1,1.1);
+			}
+
+			50%{
+				opacity: 0;
+			}
+		}
+
+		.foto:nth-child(1){
+
+		}
+
+		.foto:nth-child(2){
+			animation-delay: 5s;
+		}
+
+		.foto:nth-child(3){
+			animation-delay: 10s;
+		}
+
+	</style>
+	
 	
 </head>
 <body>
@@ -16,6 +61,12 @@
         </div>
 	    </ul>
 	</nav>
+
+<section class="galeria">
+    <img class="foto" src="/static/inferno.jpg"/>
+    <img class="foto" src="/static/jao.jpeg"/>
+    <img class="foto" src="/static/vikey.jpg"/>
+</section>
 <br>
 <h4>Artistas em destaque</h4>
 <nav id="menu">
@@ -28,7 +79,9 @@
     </ul>
 </nav>
 <br>
-<br>
+
+
+
 <h2>MPB</h2>
 <p>A década de 60 é considerada um período de ebulição na música brasileira. É quando passam a coexistir o samba, o jazz, a Bossa Nova, o sertanejo de raiz, a moda de viola, o baião nordestino, o rock e outros.
 

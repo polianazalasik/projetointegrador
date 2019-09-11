@@ -64,3 +64,8 @@ footer{
 	font-family: "NSimSun";
 
 }
+
+.galeria img {
+    width: 1340px;
+    height: 1060px;
+}
