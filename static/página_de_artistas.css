@@ -1,0 +1,61 @@
+#site{
+    width:100%;
+    height:100%;
+    margin-top:0;
+    margin-left:auto;
+    margin-bottom:0;
+    margin-right:auto;
+    background-color:#666;
+}
+#conteudo-left{
+    width:25%;
+    height:100;
+    float:left;
+    background-color: gray;
+    }
+
+#header{
+    width:100%;
+    height:50px;
+    background-color: black;
+}
+
+#menuu {
+    height: 60px;
+    background-color: black;
+    color: white;
+} 
+  
+#menuu ul {
+    padding:25px;
+    margin:20px;
+    list-style:none;
+    font-size: 20px;
+    color: white;
+    word-spacing: 35px;
+    font-family:"Yu Gothic Light";
+    float: right;
+    text-decoration: none;
+    position: relative;
+    top: -30px;
+}
+  
+#menuu ul li {
+    display: inline;
+}
+  
+.a a {
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    width:100%;
+    height:100%;
+    background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	font-family: "NSimSun";
+    }
+  
