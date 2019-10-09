@@ -86,5 +86,22 @@ def album():
 def alumbum():
     return render_template("alumbum1.html")
 
+@app.route("/album2")
+def album2():
+    return render_template("album2.html")
+
+@app.route("/album3")
+def album3():
+    return render_template("album3.html")
+
+@app.route("/album4")
+def album4():
+    return render_template("album4.html")
+
+@app.route("/album5")
+def album5():
+    return render_template("album5.html")
+
+
 app.config['SECRET_KEY'] = 'RYDYDYT'
 app.run(host="0.0.0.0", debug=True)
