@@ -4,14 +4,13 @@
     margin-top:0;
     margin-left:auto;
     margin-bottom:0;
-    margin-right:auto;
     background-color:#666;
 }
 #conteudo-left{
     width:25%;
-    height:100;
+    height:650px;
     float:left;
-    background-color: gray;
+    background-color: white;
     }
 
 #header{
@@ -49,13 +48,30 @@
     color: white;
 }
 
-footer{
-    width:100%;
-    height:100%;
+#conteudo-right{
+    width:700px;
+    height:650px;
+    float:left;
+    background-color: white;
+}
+
+#footer{
+    width: 100%;
+    position:absolute;
+    bottom:0;
     background-color: black;
 	color: white;
 	text-align: center;
 	font-size: 10px;
-	font-family: "NSimSun";
+    font-family: "NSimSun";
     }
-  
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    background-color: aquamarine;
+    width: 100%;
+}
