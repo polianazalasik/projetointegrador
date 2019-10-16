@@ -102,6 +102,34 @@ def album4():
 def album5():
     return render_template("album5.html")
 
+@app.route("/album6")
+def album6():
+    return render_template("album6.html")
+
+@app.route("/album7")
+def album7():
+    return render_template("album7.html")
+
+@app.route("/album8")
+def album8():
+    return render_template("album8.html")
+
+@app.route("/album9")
+def album9():
+    return render_template("album9.html")
+
+@app.route("/album10")
+def album10():
+    return render_template("album10.html")
+
+@app.route("/album11")
+def album11():
+    return render_template("album11.html")
+
+@app.route("/album12")
+def album12():
+    return render_template("album12.html")
+
 
 app.config['SECRET_KEY'] = 'RYDYDYT'
 app.run(host="0.0.0.0", debug=True)
