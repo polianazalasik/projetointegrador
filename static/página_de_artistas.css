@@ -79,3 +79,11 @@ table {
 a:link {
     text-decoration: none;
 }
+
+button {
+    background-color: rgb(31, 138, 31);
+    width: 170px;
+    height: 40px;
+    font-size: 100%;
+    color: white;
+}
