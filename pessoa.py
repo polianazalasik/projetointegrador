@@ -8,7 +8,7 @@ class BaseModel(Model):
     class Meta:
         database = db
 
-class Pessoa():
+class Pessoa(BaseModel):
     nome = CharField()
     dia = CharField()
     mes = CharField()
@@ -25,4 +25,11 @@ class Pessoa():
     login = CharField()
     passs = CharField()
     passconfirm = CharField()
+
+db.connect()
+db.create_tables([Pessoa])
+
+
+
+
         

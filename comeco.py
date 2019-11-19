@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from pessoa import Pessoa
 
-lista_global = []
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -11,7 +9,7 @@ def inicio():
 
 @app.route("/listar_pessoas")
 def listar_pessoas():
-    return render_template("listar_pessoas.html", pessoas = lista_global)
+    return render_template("listar_pessoas.html", lista = Pessoa.select())
 
 @app.route("/form_inserir_pessoas")
 def mostrar_pessoas():
@@ -20,22 +18,22 @@ def mostrar_pessoas():
 @app.route("/cadastrar")
 def cadastrar_pessoas():
     nome =request.args.get("cpf")
-    dia = request.args.get("cpf")
-    mes = request.args.get("cpf")
-    ano = request.args.get("cpf")
-    rg = request.args.get("cpf")
+    dia = request.args.get("dia")
+    mes = request.args.get("mes")
+    ano = request.args.get("ano")
+    rg = request.args.get("rg")
     cpf = request.args.get("cpf")
-    rua = request.args.get("cpf")
-    numero = request.args.get("cpf")
-    bairro = request.args.get("cpf")
-    estado = request.args.get("cpf")
-    cidade = request.args.get("cpf")
-    cep = request.args.get("cpf")
-    email = request.args.get("cpf")
-    login = request.args.get("cpf")
-    passs = request.args.get("cpf")
-    passconfirm = request.args.get("cpf")
-    lista_global.append(Pessoa(nome, dia, mes, ano, rg, cpf, rua, numero, bairro, estado, cidade, cep, email, login, passs, passconfirm))
+    rua = request.args.get("rua")
+    numero = request.args.get("numero")
+    bairro = request.args.get("bairro")
+    estado = request.args.get("estado")
+    cidade = request.args.get("cidade")
+    cep = request.args.get("cep")
+    email = request.args.get("email")
+    login = request.args.get("login")
+    passs = request.args.get("passs")
+    passconfirm = request.args.get("passconfirm")
+    lista_global.append(Pessoa(nome=nome, dia = dia, mes=mes, ano=ano, rg=rg, cpf=cpf, rua=rua, numero=numero, bairro=bairro, estado=estado, cidade=cidade, cep=cep, email=email, login=login, passs=passs, passconfirm=passconfirm))
     return listar_pessoas()
 
 @app.route("/excluir_pessoas")
@@ -143,12 +141,13 @@ def album11():
 def album12():
     return render_template("album12.html")
 
-@app.route("/comprar")
-def cadastrar_pessoas():
-    login = request.args.get("login")
-    senha = request.args.get("nome")
-    lista_global.append(Pessoa(cpf, nome, idade))
-    return listar_pessoas()
+@app.route("/form_compras")
+def form_compras():
+    return render_template("form_compras.html")
+
+@app.route("/sucesso")
+def fazer_sucesso():
+    return render_template("sucesso.html")
 
 
 app.config['SECRET_KEY'] = 'RYDYDYT'
