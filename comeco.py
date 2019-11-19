@@ -19,10 +19,23 @@ def mostrar_pessoas():
 
 @app.route("/cadastrar")
 def cadastrar_pessoas():
+    nome =request.args.get("cpf")
+    dia = request.args.get("cpf")
+    mes = request.args.get("cpf")
+    ano = request.args.get("cpf")
+    rg = request.args.get("cpf")
     cpf = request.args.get("cpf")
-    nome = request.args.get("nome")
-    idade = request.args.get("idade")
-    lista_global.append(Pessoa(cpf, nome, idade))
+    rua = request.args.get("cpf")
+    numero = request.args.get("cpf")
+    bairro = request.args.get("cpf")
+    estado = request.args.get("cpf")
+    cidade = request.args.get("cpf")
+    cep = request.args.get("cpf")
+    email = request.args.get("cpf")
+    login = request.args.get("cpf")
+    passs = request.args.get("cpf")
+    passconfirm = request.args.get("cpf")
+    lista_global.append(Pessoa(nome, dia, mes, ano, rg, cpf, rua, numero, bairro, estado, cidade, cep, email, login, passs, passconfirm))
     return listar_pessoas()
 
 @app.route("/excluir_pessoas")
@@ -129,6 +142,13 @@ def album11():
 @app.route("/album12")
 def album12():
     return render_template("album12.html")
+
+@app.route("/comprar")
+def cadastrar_pessoas():
+    login = request.args.get("login")
+    senha = request.args.get("nome")
+    lista_global.append(Pessoa(cpf, nome, idade))
+    return listar_pessoas()
 
 
 app.config['SECRET_KEY'] = 'RYDYDYT'

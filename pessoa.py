@@ -1,5 +1,28 @@
+import os
+from peewee import *
+
+arq = "pessoa.db" 
+db = SqliteDatabase(arq)
+
+class BaseModel(Model):
+    class Meta:
+        database = db
+
 class Pessoa():
-    def __init__(self, cpf, nome, idade):
-        self.cpf = cpf
-        self.nome = nome
-        self.idade = idade
+    nome = CharField()
+    dia = CharField()
+    mes = CharField()
+    ano = CharField()
+    rg = CharField()
+    cpf = CharField()
+    rua = CharField()
+    numero = CharField()
+    bairro = CharField()
+    estado = CharField()
+    cidade = CharField()
+    cep = CharField()
+    email = CharField()
+    login = CharField()
+    passs = CharField()
+    passconfirm = CharField()
+        
