@@ -2,7 +2,7 @@
 *, *:before, *:after { 
   margin:0;
   padding:0;
-  font-family: Arial;
+  font-family: "Yu Gothic Light";
 }
 
 body{
@@ -175,7 +175,7 @@ footer{
 	color: white;
 	text-align: center;
 	font-size: 10px;
-	font-family: "NSimSun";
+  font-family:"Yu Gothic Light";
 
 }
 

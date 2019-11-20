@@ -45,7 +45,7 @@
   
 .a a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 #conteudo-right{
@@ -63,7 +63,7 @@
 	color: white;
 	text-align: center;
 	font-size: 10px;
-    font-family: "NSimSun";
+    font-family: "Yu Gothic Light";
     }
 
 img {
@@ -87,3 +87,4 @@ button {
     font-size: 100%;
     color: white;
 }
+

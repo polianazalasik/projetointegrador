@@ -33,7 +33,7 @@ def cadastrar_pessoas():
     login = request.args.get("login")
     passs = request.args.get("passs")
     passconfirm = request.args.get("passconfirm")
-    lista_global.append(Pessoa(nome=nome, dia = dia, mes=mes, ano=ano, rg=rg, cpf=cpf, rua=rua, numero=numero, bairro=bairro, estado=estado, cidade=cidade, cep=cep, email=email, login=login, passs=passs, passconfirm=passconfirm))
+    Pessoa(nome=nome, dia = dia, mes=mes, ano=ano, rg=rg, cpf=cpf, rua=rua, numero=numero, bairro=bairro, estado=estado, cidade=cidade, cep=cep, email=email, login=login, passs=passs, passconfirm=passconfirm)
     return listar_pessoas()
 
 @app.route("/excluir_pessoas")
